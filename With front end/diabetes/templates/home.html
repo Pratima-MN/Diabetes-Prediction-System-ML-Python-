@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        body{
+        background-image:url("{% static 'Diabetesprediction/images/img1.jpg'%}")
+        }
+        input[type=submit]{
+            background-color: #4dc3ff;
+            border: 2px;
+            color: white;
+            padding: 16px 32px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div align = 'center'>
+        <form action = "predict">
+            <input type="submit" value="Lets get started">
+        </form>
+    </div>
+</body>
+</html>
